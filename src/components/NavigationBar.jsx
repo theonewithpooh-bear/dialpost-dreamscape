@@ -7,7 +7,7 @@ const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-green-800 text-white py-4 relative">
+    <nav className="bg-green-800 text-white py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-xl font-bold">Dial Post</Link>
@@ -19,11 +19,7 @@ const NavigationBar = () => {
             {isMenuOpen ? (
               <X size={24} />
             ) : (
-              <div className="flex flex-col space-y-1">
-                <span className="block w-6 h-0.5 bg-white"></span>
-                <span className="block w-6 h-0.5 bg-white"></span>
-                <span className="block w-6 h-0.5 bg-white"></span>
-              </div>
+              <Menu size={24} />
             )}
           </button>
           <div className={`md:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col md:flex-row absolute md:relative top-full left-0 right-0 bg-green-800 md:bg-transparent z-10`}>
