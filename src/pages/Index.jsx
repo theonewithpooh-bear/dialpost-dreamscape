@@ -70,7 +70,9 @@ const Index = () => {
             It's a 3,500-acre estate where natural processes are allowed to shape the land, 
             resulting in a haven for wildlife and a unique visitor experience.
           </p>
-          <Button className="bg-green-700 hover:bg-green-800">Learn More About Knepp</Button>
+          <a href="https://knepp.co.uk" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-green-700 hover:bg-green-800">Learn More About Knepp</Button>
+          </a>
         </section>
 
         <section>
