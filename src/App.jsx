@@ -13,13 +13,17 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
-        <NavigationBar />
-        <Routes>
-          {navItems.map(({ to, page }) => (
-            <Route key={to} path={to} element={page} />
-          ))}
-          <Route path="/alpha-explanation" element={<AlphaExplanation />} />
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+          <NavigationBar />
+          <main className="flex-grow">
+            <Routes>
+              {navItems.map(({ to, page }) => (
+                <Route key={to} path={to} element={page} />
+              ))}
+              <Route path="/alpha-explanation" element={<AlphaExplanation />} />
+            </Routes>
+          </main>
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
