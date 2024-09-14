@@ -20,17 +20,19 @@ const Businesses = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">A historic pub established in the 16th century, offering a warm atmosphere, local cuisine, and a selection of fine ales. The Crown Inn is the heart of Dial Post's community life.</p>
+              <p className="mb-4">An award-winning free house owned and run by Penny and James Middleton Burn. Known for excellent homemade food, local Sussex breweries, and a welcoming atmosphere.</p>
+              <ul className="mb-4 list-disc list-inside">
+                <li>Daily menu of pub classics and seasonal specials</li>
+                <li>Four beautifully appointed rooms and two self-catering cottages</li>
+                <li>Dog-friendly with a beer garden and patio</li>
+                <li>Close to excellent walks and the Knepp Castle Estate</li>
+              </ul>
               <div className="flex space-x-4">
                 <a href="tel:+441403710902" className="flex items-center text-green-600 hover:text-green-800">
                   <PhoneIcon className="h-4 w-4 mr-1" />
                   Call
                 </a>
-                <a href="mailto:info@crown-inn-dialpost.co.uk" className="flex items-center text-green-600 hover:text-green-800">
-                  <MailIcon className="h-4 w-4 mr-1" />
-                  Email
-                </a>
-                <a href="https://www.crown-inn-dialpost.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="https://www.thecrowninndialpost.com" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
                   <GlobeIcon className="h-4 w-4 mr-1" />
                   Website
                 </a>
