@@ -4,6 +4,7 @@ import { MapPinIcon, HomeIcon, BeerIcon, TreesIcon, BuildingIcon } from 'lucide-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PointsOfInterest from '@/components/PointsOfInterest';
+import '../styles/custom.css';
 
 const Index = () => {
   return (
@@ -12,32 +13,32 @@ const Index = () => {
 
       <main className="container mx-auto py-8 px-4">
         <section className="mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-4 text-green-800 chewy-regular">Welcome to Dial Post</h2>
-          <p className="text-xl mb-4 text-green-700 max-w-2xl mx-auto">
-            A charming West Sussex village with a rich history and natural beauty.
+          <h2 className="text-4xl font-bold mb-4 text-green-800 animate-fade-in">Welcome to Dial Post</h2>
+          <p className="text-xl mb-4 text-green-700 max-w-2xl mx-auto animate-fade-in-delay">
+            Discover the hidden gem of West Sussex, where history meets nature in perfect harmony.
           </p>
-          <div className="flex items-center justify-center text-green-600">
+          <div className="flex items-center justify-center text-green-600 animate-fade-in-delay-2">
             <MapPinIcon className="h-5 w-5 mr-2" />
             <span>50.96377°N 0.35651°W</span>
           </div>
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <Card className="bg-white shadow-md rounded-lg overflow-hidden">
+          <Card className="bg-gradient-to-br from-green-100 to-green-200 hover:from-green-200 hover:to-green-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl rounded-lg overflow-hidden">
             <CardHeader className="bg-green-700 text-white p-4">
               <CardTitle className="flex items-center text-2xl">
                 <HomeIcon className="h-6 w-6 mr-2" />
-                Our History
+                Our Rich History
               </CardTitle>
             </CardHeader>
             <CardContent className="p-6">
               <p className="text-green-800 leading-relaxed">
-                Explore Dial Post's journey from its early 18th century origins to the present day.
+                Embark on a journey through time as you explore the fascinating past of Dial Post. From its humble beginnings in the early 18th century to its present-day charm, every corner of our village tells a story.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-white shadow-md rounded-lg overflow-hidden">
+          <Card className="bg-gradient-to-br from-green-100 to-green-200 hover:from-green-200 hover:to-green-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl rounded-lg overflow-hidden">
             <CardHeader className="bg-green-700 text-white p-4">
               <CardTitle className="flex items-center text-2xl">
                 <BuildingIcon className="h-6 w-6 mr-2" />
@@ -60,13 +61,13 @@ const Index = () => {
                 </li>
                 <li className="flex items-center">
                   <BuildingIcon className="h-5 w-5 mr-2 text-red-600" />
-                  <span>Thakeham Furniture</span>
+                  <span>Thakum Furniture</span>
                 </li>
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="bg-white shadow-md rounded-lg overflow-hidden">
+          <Card className="bg-gradient-to-br from-green-100 to-green-200 hover:from-green-200 hover:to-green-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl rounded-lg overflow-hidden">
             <CardHeader className="bg-green-700 text-white p-4">
               <CardTitle className="flex items-center text-2xl">
                 <HomeIcon className="h-6 w-6 mr-2" />
@@ -99,37 +100,39 @@ const Index = () => {
         <PointsOfInterest />
 
         <section className="mb-16 text-center">
-          <h2 className="text-4xl font-bold mb-4 text-green-800 chewy-regular">Knepp Estate</h2>
+          <h2 className="text-4xl font-bold mb-4 text-green-800">Knepp Estate</h2>
           <p className="text-xl mb-6 text-green-700 max-w-3xl mx-auto">
-            Discover the Knepp Estate's rewilding project, spanning 3,500 acres of Sussex countryside.
+            Experience the wonders of nature at the pioneering Knepp Estate. 
+            Witness the rebirth of a diverse ecosystem across 3,500 acres of stunning Sussex countryside.
           </p>
           <a href="https://knepp.co.uk" target="_blank" rel="noopener noreferrer" className="inline-block">
-            <button className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300">
-              Visit Knepp Estate
+            <button className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+              Explore Knepp Estate
             </button>
           </a>
         </section>
 
         <section className="text-center">
-          <h2 className="text-4xl font-bold mb-4 text-green-800 chewy-regular">Plan Your Visit</h2>
+          <h2 className="text-4xl font-bold mb-4 text-green-800">Plan Your Visit</h2>
           <p className="text-xl mb-6 text-green-700 max-w-3xl mx-auto">
-            Experience Dial Post's attractions, from our historic pub to the Knepp Estate.
+            Immerse yourself in the tranquil beauty of Dial Post. From our historic pub to the 
+            breathtaking Knepp Estate, unforgettable experiences await.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
               <HomeIcon className="h-12 w-12 mx-auto mb-4 text-green-600" />
-              <h3 className="text-xl font-semibold mb-2 text-green-700">Accommodations</h3>
-              <p className="text-green-600">Find lodgings in and around Dial Post.</p>
+              <h3 className="text-xl font-semibold mb-2 text-green-700">Cozy Accommodations</h3>
+              <p className="text-green-600">Find charming lodgings in and around Dial Post.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
               <BeerIcon className="h-12 w-12 mx-auto mb-4 text-green-600" />
               <h3 className="text-xl font-semibold mb-2 text-green-700">Local Cuisine</h3>
-              <p className="text-green-600">Dine at The Crown Inn and nearby restaurants.</p>
+              <p className="text-green-600">Savor delicious meals at The Crown Inn and nearby eateries.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
               <TreesIcon className="h-12 w-12 mx-auto mb-4 text-green-600" />
               <h3 className="text-xl font-semibold mb-2 text-green-700">Nature Walks</h3>
-              <p className="text-green-600">Explore local trails and the Knepp Estate.</p>
+              <p className="text-green-600">Explore scenic trails and the Knepp Estate.</p>
             </div>
           </div>
         </section>
