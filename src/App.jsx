@@ -7,6 +7,7 @@ import { navItems } from "./nav-items";
 import Header from "./components/Header";
 import MobileNavigation from "./components/MobileNavigation";
 import Footer from "./components/Footer";
+import WelcomePopup from "./components/WelcomePopup";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => {
             </main>
             <Footer />
           </div>
+          <WelcomePopup />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
