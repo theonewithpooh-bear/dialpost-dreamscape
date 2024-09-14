@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HomeIcon, BookOpenIcon, BuildingIcon, ArchiveIcon, CalendarIcon, BookIcon, MapPinIcon, TreePine, BeerIcon } from 'lucide-react';
-import Footer from '@/components/Footer';
 import '../styles/custom.css';
 import { useMediaQuery } from 'react-responsive';
 
@@ -110,7 +109,6 @@ const Index = () => {
           </div>
         )}
       </main>
-      <Footer />
     </div>
   );
 };
