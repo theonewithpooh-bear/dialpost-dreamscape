@@ -1,7 +1,7 @@
-import { HomeIcon, BookOpenIcon, LandmarkIcon, ArchiveIcon } from "lucide-react";
+import { HomeIcon, BookOpenIcon, BuildingIcon, ArchiveIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import History from "./pages/History.jsx";
-import Landmarks from "./pages/Landmarks.jsx";
+import Businesses from "./pages/Businesses.jsx";
 import ListedBuildings from "./pages/ListedBuildings.jsx";
 
 /**
@@ -21,10 +21,10 @@ export const navItems = [
     page: <History />,
   },
   {
-    title: "Landmarks",
-    to: "/landmarks",
-    icon: <LandmarkIcon className="h-4 w-4" />,
-    page: <Landmarks />,
+    title: "Businesses",
+    to: "/businesses",
+    icon: <BuildingIcon className="h-4 w-4" />,
+    page: <Businesses />,
   },
   {
     title: "Listed Buildings",
