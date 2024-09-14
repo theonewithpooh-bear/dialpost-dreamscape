@@ -26,11 +26,11 @@ const Businesses = () => {
                   <PhoneIcon className="h-4 w-4 mr-1" />
                   Call
                 </a>
-                <a href="mailto:info@thecrowndialpost.com" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="mailto:info@crown-inn-dialpost.co.uk" className="flex items-center text-green-600 hover:text-green-800">
                   <MailIcon className="h-4 w-4 mr-1" />
                   Email
                 </a>
-                <a href="https://www.thecrowndialpost.com" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="https://www.crown-inn-dialpost.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
                   <GlobeIcon className="h-4 w-4 mr-1" />
                   Website
                 </a>
@@ -66,7 +66,7 @@ const Businesses = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <HomeIcon className="h-6 w-6 mr-2 text-blue-600" />
-                Dial Post Garden Centre
+                Tates Garden Centre
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -76,11 +76,11 @@ const Businesses = () => {
                   <PhoneIcon className="h-4 w-4 mr-1" />
                   Call
                 </a>
-                <a href="mailto:info@dialpostgardencentre.co.uk" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="mailto:info@tatesgardencentre.co.uk" className="flex items-center text-green-600 hover:text-green-800">
                   <MailIcon className="h-4 w-4 mr-1" />
                   Email
                 </a>
-                <a href="https://www.dialpostgardencentre.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="https://www.tatesofsusse.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
                   <GlobeIcon className="h-4 w-4 mr-1" />
                   Website
                 </a>
@@ -91,21 +91,21 @@ const Businesses = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <BuildingIcon className="h-6 w-6 mr-2 text-red-600" />
-                Blakers Yard Antiques
+                Thakum Furniture
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">A treasure trove of antiques and collectibles housed in a charming converted barn. Blakers Yard offers a unique shopping experience with items ranging from vintage furniture to rare books.</p>
+              <p className="mb-4">A local furniture store specializing in high-quality, handcrafted pieces. Thakum Furniture offers a range of styles from traditional to contemporary, perfect for enhancing your home.</p>
               <div className="flex space-x-4">
                 <a href="tel:+441403710789" className="flex items-center text-green-600 hover:text-green-800">
                   <PhoneIcon className="h-4 w-4 mr-1" />
                   Call
                 </a>
-                <a href="mailto:enquiries@blakersyardantiques.co.uk" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="mailto:info@thakumfurniture.co.uk" className="flex items-center text-green-600 hover:text-green-800">
                   <MailIcon className="h-4 w-4 mr-1" />
                   Email
                 </a>
-                <a href="https://www.blakersyardantiques.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="https://www.thakumfurniture.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
                   <GlobeIcon className="h-4 w-4 mr-1" />
                   Website
                 </a>

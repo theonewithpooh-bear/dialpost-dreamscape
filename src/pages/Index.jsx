@@ -61,11 +61,11 @@ const Index = () => {
                 </li>
                 <li className="flex items-center">
                   <HomeIcon className="h-5 w-5 mr-2 text-blue-600" />
-                  <span>Dial Post Garden Centre</span>
+                  <span>Tates Garden Centre</span>
                 </li>
                 <li className="flex items-center">
                   <BuildingIcon className="h-5 w-5 mr-2 text-red-600" />
-                  <span>Blakers Yard Antiques</span>
+                  <span>Thakum Furniture</span>
                 </li>
               </ul>
               <Link to="/businesses" className="mt-4 text-green-600 font-semibold hover:text-green-800 transition-colors">
