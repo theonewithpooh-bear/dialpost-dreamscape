@@ -1,17 +1,15 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { MapPinIcon, HomeIcon, BeerIcon, TreesIcon, BuildingIcon } from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import PointsOfInterest from '@/components/PointsOfInterest';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-green-700 text-white p-4">
-        <div className="container mx-auto">
-          <h1 className="text-4xl font-bold">Dial Post</h1>
-          <p className="text-xl">A charming village in West Sussex, England</p>
-        </div>
-      </header>
+      <Header />
 
       <main className="container mx-auto py-8">
         <section className="mb-12">
@@ -41,7 +39,7 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <ul className="list-disc list-inside">
-                <li>The Crown Inn (public house)</li>
+                <li>The Crown Inn (established in the 16th century)</li>
                 <li>Knepp Wilding Kitchen</li>
                 <li>Blakers Yard</li>
                 <li>Garden Centre</li>
@@ -63,42 +61,28 @@ const Index = () => {
           </Card>
         </section>
 
+        <PointsOfInterest />
+
         <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-4">Points of Interest</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex items-center">
-              <HomeIcon className="h-6 w-6 mr-2 text-green-600" />
-              <span>New village hall built in 2010</span>
-            </div>
-            <div className="flex items-center">
-              <BeerIcon className="h-6 w-6 mr-2 text-amber-600" />
-              <span>The Crown Inn, established in the 1870s</span>
-            </div>
-            <div className="flex items-center">
-              <TreesIcon className="h-6 w-6 mr-2 text-green-800" />
-              <span>Nearby Knepp Castle ruins</span>
-            </div>
-            <div className="flex items-center">
-              <BuildingIcon className="h-6 w-6 mr-2 text-gray-600" />
-              <span>St George's Church in West Grinstead</span>
-            </div>
-          </div>
+          <h2 className="text-3xl font-semibold mb-4">Knepp Rewilding Estate</h2>
+          <p className="text-lg mb-4">
+            The Knepp Rewilding Estate is a pioneering rewilding project located near Dial Post. 
+            It's a 3,500-acre estate where natural processes are allowed to shape the land, 
+            resulting in a haven for wildlife and a unique visitor experience.
+          </p>
+          <Button className="bg-green-700 hover:bg-green-800">Learn More About Knepp</Button>
         </section>
 
         <section>
           <h2 className="text-3xl font-semibold mb-4">Visit Dial Post</h2>
           <p className="text-lg mb-4">
-            Experience the charm of this historic village and its surrounding countryside.
+            Experience the charm of this historic village, its 16th-century pub, and the nearby Knepp Rewilding Estate.
           </p>
           <Button className="bg-green-700 hover:bg-green-800">Plan Your Visit</Button>
         </section>
       </main>
 
-      <footer className="bg-gray-800 text-white py-4 mt-12">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2024 Dial Post Village. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
