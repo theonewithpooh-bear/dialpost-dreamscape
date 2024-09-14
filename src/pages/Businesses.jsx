@@ -49,11 +49,11 @@ const Businesses = () => {
             <CardContent>
               <p className="mb-4">A pioneering rewilding project spread across 3,500 acres. Knepp Estate offers wildlife safaris, glamping experiences, and educational tours about conservation and biodiversity.</p>
               <div className="flex space-x-4">
-                <a href="tel:+441403741235" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="tel:+441403713230" className="flex items-center text-green-600 hover:text-green-800">
                   <PhoneIcon className="h-4 w-4 mr-1" />
                   Call
                 </a>
-                <a href="mailto:enquiries@knepp.co.uk" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="mailto:safaris@knepp.co.uk" className="flex items-center text-green-600 hover:text-green-800">
                   <MailIcon className="h-4 w-4 mr-1" />
                   Email
                 </a>
