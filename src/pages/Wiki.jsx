@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { MapPinIcon, HomeIcon, BeerIcon, TreePine, BookIcon } from 'lucide-react';
-import AlphaExplanation from '@/components/AlphaExplanation';
 
 const Wiki = () => {
   return (
