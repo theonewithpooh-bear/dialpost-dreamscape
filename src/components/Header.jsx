@@ -1,21 +1,11 @@
 import React from 'react';
-import { Button } from "@/components/ui/button";
-import { Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const Header = ({ onOpenNavigation }) => {
+const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-green-700 to-green-900 text-white py-4 px-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl sm:text-3xl font-bold animate-typewriter special-elite-regular">Dial Post</h1>
-        <Button 
-          variant="outline" 
-          size="icon" 
-          onClick={onOpenNavigation} 
-          aria-label="View Navigation"
-          className="text-white border-white hover:bg-green-600"
-        >
-          <Menu className="h-6 w-6" />
-        </Button>
+    <header className="bg-green-700 text-white py-4 px-4">
+      <div className="container mx-auto">
+        <Link to="/" className="text-4xl font-bold special-elite-regular">Dial Post</Link>
       </div>
     </header>
   );
