@@ -40,11 +40,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   
   p {
     font-size: 1rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -87,4 +92,35 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   letter-spacing: .15em;
   animation: typewriter 3.5s steps(40, end);
+}
+
+/* Responsive utilities */
+.md\:text-left {
+  text-align: left;
+}
+
+.md\:text-center {
+  text-align: center;
+}
+
+.md\:text-right {
+  text-align: right;
+}
+
+.md\:flex {
+  display: flex;
+}
+
+.md\:hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
 }

@@ -12,8 +12,8 @@ const Index = () => {
 
       <main className="container mx-auto py-8 px-4">
         <section className="mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-4 text-green-800 animate-fade-in">Welcome to Dial Post</h2>
-          <p className="text-xl mb-4 text-green-700 max-w-2xl mx-auto animate-fade-in-delay">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 animate-fade-in">Welcome to Dial Post</h2>
+          <p className="text-lg md:text-xl mb-4 text-green-700 max-w-2xl mx-auto animate-fade-in-delay">
             A charming West Sussex village with a rich history and natural beauty.
           </p>
           <div className="flex items-center justify-center text-green-600 animate-fade-in-delay-2">
@@ -25,7 +25,7 @@ const Index = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-4 text-green-800 flex items-center">
+              <h3 className="text-xl md:text-2xl font-bold mb-4 text-green-800 flex items-center">
                 <HomeIcon className="h-6 w-6 mr-2 text-green-600" />
                 Village Highlights
               </h3>
@@ -48,7 +48,7 @@ const Index = () => {
 
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-4 text-green-800 flex items-center">
+              <h3 className="text-xl md:text-2xl font-bold mb-4 text-green-800 flex items-center">
                 <TreePine className="h-6 w-6 mr-2 text-green-600" />
                 Knepp Estate
               </h3>
@@ -68,8 +68,8 @@ const Index = () => {
         </section>
 
         <section className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-green-800">Plan Your Visit</h2>
-          <p className="text-xl mb-6 text-green-700 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800">Plan Your Visit</h2>
+          <p className="text-lg md:text-xl mb-6 text-green-700 max-w-3xl mx-auto">
             Discover the perfect countryside retreat in Dial Post.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
