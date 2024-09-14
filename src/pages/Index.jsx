@@ -78,7 +78,6 @@ const Index = () => {
           <p className="text-lg mb-4">
             Experience the charm of this historic village, its 16th-century pub, and the nearby Knepp Rewilding Estate.
           </p>
-          <Button className="bg-green-700 hover:bg-green-800">Plan Your Visit</Button>
         </section>
       </main>
 
