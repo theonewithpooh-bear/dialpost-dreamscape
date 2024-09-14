@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPinIcon, HomeIcon, BeerIcon, TreePine, BuildingIcon } from 'lucide-react';
+import { MapPinIcon, HomeIcon, BeerIcon, TreePine, BuildingIcon, Menu } from 'lucide-react';
 import Footer from '@/components/Footer';
+import MobileNavigation from '@/components/MobileNavigation';
 import '../styles/custom.css';
 
 const Index = () => {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100">
       <main className="container mx-auto py-8 px-4">
@@ -18,6 +21,14 @@ const Index = () => {
             <span>50.96377°N 0.35651°W</span>
           </div>
         </section>
+
+        <button
+          className="md:hidden bg-green-600 hover:bg-green-500 text-white py-2 px-4 rounded fixed bottom-4 right-4 z-50 flex items-center"
+          onClick={() => setIsMobileNavOpen(true)}
+        >
+          <Menu className="h-5 w-5 mr-2" />
+          Display Navigation
+        </button>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
@@ -84,6 +95,8 @@ const Index = () => {
           </div>
         </section>
       </main>
+      <Footer />
+      <MobileNavigation isOpen={isMobileNavOpen} onClose={() => setIsMobileNavOpen(false)} />
     </div>
   );
 };

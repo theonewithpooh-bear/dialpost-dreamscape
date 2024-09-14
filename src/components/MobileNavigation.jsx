@@ -7,7 +7,7 @@ const MobileNavigation = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-white z-50 md:hidden">
+    <div className="fixed inset-0 bg-white z-50 md:hidden overflow-y-auto">
       <div className="flex justify-end p-4">
         <button onClick={onClose} className="text-green-700">
           <X size={24} />
