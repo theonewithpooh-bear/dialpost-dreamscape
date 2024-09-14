@@ -10,9 +10,9 @@ const Events = () => {
         <h1 className="text-4xl font-bold mb-6 text-green-800">Events</h1>
         <p className="text-xl text-green-700 mb-6 font-winnie">Pardon our honeypots, but there are currently no organised events.</p>
         <img
-          src="https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdb0zFwq-8Zo0YjIoOJzO7WfoNW0WJ3LIZi8Kqe-HkGAh3N4dJQeJJ8LcoSM9JohVJomg7k_7Anp0IIuuosd1IU97kufgiR8LSZy3a_GvM32Iq_Mdlc8iveRc3HRW-xVPR9X8L6N5aR3-Sbpa8qJ2CSs_mXcHs=s2048?key=p0s8EYPn5tdVK48MLi7dOQ"
+          src="https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfLSxINj58aam6IL6QTnRJMiSMRz1Hy_QPbAOvCXLPV6e_CZeM-J_PteebyCN_0CO24hlg3O_5G7eQHdS-1hTjIoxX-rBTYIhB9D3QLLB33sZG9j41fa_q4mHX0kKbGzBfTo3iTXdmBPLF5FbcIq6Oee_Udb1o=s2048?key=p0s8EYPn5tdVK48MLi7dOQ"
           alt="Confused Pooh"
-          className="mx-auto w-48 h-48 object-cover"
+          className="mx-auto w-40 h-40 object-cover"
         />
       </main>
       <Footer />
