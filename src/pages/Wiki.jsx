@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { MapPinIcon, HomeIcon, BeerIcon, TreePine, BookIcon } from 'lucide-react';
+import AlphaExplanation from '@/components/AlphaExplanation';
 
 const Wiki = () => {
   return (
@@ -94,6 +95,17 @@ const Wiki = () => {
         </Link>
       </main>
       <Footer />
+      <div className="bg-green-800 text-white py-4 px-4 text-center">
+        <p className="mb-2">
+          Contact Monty, site admin, for changes or information: 
+          <a href="mailto:info@dialpostvillage.co.uk" className="underline hover:text-green-300">info@dialpostvillage.co.uk</a>
+        </p>
+        <p>Feedback is very much appreciated!</p>
+        <div className="mt-4 flex justify-center items-center">
+          <span className="bg-yellow-500 text-black px-2 py-1 rounded-md text-sm font-bold mr-2">α</span>
+          <Link to="/alpha-explanation" className="text-sm underline hover:text-green-300">What does Alpha stage mean?</Link>
+        </div>
+      </div>
     </div>
   );
 };
