@@ -1,15 +1,12 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPinIcon, HomeIcon, BeerIcon, TreePine, BuildingIcon } from 'lucide-react';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '../styles/custom.css';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100">
-      <Header />
-
       <main className="container mx-auto py-8 px-4">
         <section className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 animate-fade-in">Welcome to Dial Post</h2>
@@ -87,8 +84,6 @@ const Index = () => {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 };
