@@ -32,6 +32,10 @@ const Businesses = () => {
                   <PhoneIcon className="h-4 w-4 mr-1" />
                   Call
                 </a>
+                <a href="mailto:info@crown-inn-dialpost.co.uk" className="flex items-center text-green-600 hover:text-green-800">
+                  <MailIcon className="h-4 w-4 mr-1" />
+                  Email
+                </a>
                 <a href="https://www.thecrowninndialpost.com" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
                   <GlobeIcon className="h-4 w-4 mr-1" />
                   Website
