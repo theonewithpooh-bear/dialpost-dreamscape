@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { MapPinIcon, HomeIcon, BeerIcon, TreesIcon, BuildingIcon } from 'lucide-react';
+import { MapPinIcon, HomeIcon, BeerIcon, TreesIcon, BuildingIcon, BookOpenIcon, LandmarkIcon, ArchiveIcon } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PointsOfInterest from '@/components/PointsOfInterest';
@@ -24,39 +23,85 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          <Card className="bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <CardHeader>
-              <CardTitle className="text-green-700">Our Rich History</CardTitle>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <Card className="bg-gradient-to-br from-green-100 to-green-200 hover:from-green-200 hover:to-green-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl rounded-lg overflow-hidden">
+            <CardHeader className="bg-green-700 text-white p-4">
+              <CardTitle className="flex items-center text-2xl">
+                <BookOpenIcon className="h-6 w-6 mr-2" />
+                Our Rich History
+              </CardTitle>
             </CardHeader>
-            <CardContent>
-              <p className="text-green-600">Dive into the fascinating past of Dial Post, dating back to the early 18th century and beyond.</p>
+            <CardContent className="p-6">
+              <p className="text-green-800 leading-relaxed">
+                Embark on a journey through time as you explore the fascinating past of Dial Post. From its humble beginnings in the early 18th century to its present-day charm, every corner of our village tells a story.
+              </p>
+              <div className="mt-4 text-green-600 font-semibold">
+                Discover our heritage &rarr;
+              </div>
             </CardContent>
           </Card>
-          <Card className="bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <CardHeader>
-              <CardTitle className="text-green-700">Local Landmarks</CardTitle>
+
+          <Card className="bg-gradient-to-br from-green-100 to-green-200 hover:from-green-200 hover:to-green-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl rounded-lg overflow-hidden">
+            <CardHeader className="bg-green-700 text-white p-4">
+              <CardTitle className="flex items-center text-2xl">
+                <LandmarkIcon className="h-6 w-6 mr-2" />
+                Local Landmarks
+              </CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside text-green-600">
-                <li>The Crown Inn (16th century)</li>
-                <li>Knepp Wilding Kitchen</li>
-                <li>Blakers Yard</li>
-                <li>Garden Centre</li>
+            <CardContent className="p-6">
+              <ul className="space-y-2 text-green-800">
+                <li className="flex items-center">
+                  <BeerIcon className="h-5 w-5 mr-2 text-amber-600" />
+                  <span>The Crown Inn (16th century)</span>
+                </li>
+                <li className="flex items-center">
+                  <TreesIcon className="h-5 w-5 mr-2 text-green-600" />
+                  <span>Knepp Wilding Kitchen</span>
+                </li>
+                <li className="flex items-center">
+                  <HomeIcon className="h-5 w-5 mr-2 text-blue-600" />
+                  <span>Blakers Yard</span>
+                </li>
+                <li className="flex items-center">
+                  <BuildingIcon className="h-5 w-5 mr-2 text-red-600" />
+                  <span>Garden Centre</span>
+                </li>
               </ul>
+              <div className="mt-4 text-green-600 font-semibold">
+                Explore our landmarks &rarr;
+              </div>
             </CardContent>
           </Card>
-          <Card className="bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <CardHeader>
-              <CardTitle className="text-green-700">Listed Buildings</CardTitle>
+
+          <Card className="bg-gradient-to-br from-green-100 to-green-200 hover:from-green-200 hover:to-green-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl rounded-lg overflow-hidden">
+            <CardHeader className="bg-green-700 text-white p-4">
+              <CardTitle className="flex items-center text-2xl">
+                <ArchiveIcon className="h-6 w-6 mr-2" />
+                Listed Buildings
+              </CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside text-green-600">
-                <li>New Lodge</li>
-                <li>Hazel Cottage</li>
-                <li>Alma Cottage</li>
-                <li>Dial Post House</li>
+            <CardContent className="p-6">
+              <ul className="space-y-2 text-green-800">
+                <li className="flex items-center">
+                  <HomeIcon className="h-5 w-5 mr-2 text-indigo-600" />
+                  <span>New Lodge</span>
+                </li>
+                <li className="flex items-center">
+                  <HomeIcon className="h-5 w-5 mr-2 text-pink-600" />
+                  <span>Hazel Cottage</span>
+                </li>
+                <li className="flex items-center">
+                  <HomeIcon className="h-5 w-5 mr-2 text-yellow-600" />
+                  <span>Alma Cottage</span>
+                </li>
+                <li className="flex items-center">
+                  <HomeIcon className="h-5 w-5 mr-2 text-purple-600" />
+                  <span>Dial Post House</span>
+                </li>
               </ul>
+              <div className="mt-4 text-green-600 font-semibold">
+                Learn about our heritage buildings &rarr;
+              </div>
             </CardContent>
           </Card>
         </section>
@@ -70,9 +115,9 @@ const Index = () => {
             Witness the rebirth of a diverse ecosystem across 3,500 acres of stunning Sussex countryside.
           </p>
           <a href="https://knepp.co.uk" target="_blank" rel="noopener noreferrer" className="inline-block">
-            <Button className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+            <button className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
               Explore Knepp Estate
-            </Button>
+            </button>
           </a>
         </section>
 
