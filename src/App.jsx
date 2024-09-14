@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { navItems } from "./nav-items";
 import NavigationBar from "./components/NavigationBar";
 import AlphaExplanation from "./pages/AlphaExplanation";
+import Footer from "./components/Footer";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
               <Route path="/alpha-explanation" element={<AlphaExplanation />} />
             </Routes>
           </main>
+          <Footer />
         </div>
       </BrowserRouter>
     </TooltipProvider>
