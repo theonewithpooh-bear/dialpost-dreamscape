@@ -5,7 +5,6 @@ import Businesses from "./pages/Businesses.jsx";
 import ListedBuildings from "./pages/ListedBuildings.jsx";
 import Events from "./pages/Events.jsx";
 import Wiki from "./pages/Wiki.jsx";
-import AlphaExplanation from "./pages/AlphaExplanation.jsx";
 
 export const navItems = [
   {
@@ -43,12 +42,5 @@ export const navItems = [
     to: "/wiki",
     icon: <BookIcon className="h-4 w-4" />,
     page: <Wiki />,
-  },
-  {
-    title: "Alpha Explanation",
-    to: "/alpha-explanation",
-    icon: null,
-    page: <AlphaExplanation />,
-    hidden: true,
   },
 ];
