@@ -14,15 +14,24 @@ const NavigationBar = () => {
           <button
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? (
+              <X size={24} />
+            ) : (
+              <div className="flex flex-col space-y-1">
+                <span className="block w-6 h-0.5 bg-white"></span>
+                <span className="block w-6 h-0.5 bg-white"></span>
+                <span className="block w-6 h-0.5 bg-white"></span>
+              </div>
+            )}
           </button>
-          <div className={`md:flex ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <div className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} absolute md:relative top-full left-0 right-0 bg-green-800 md:bg-transparent z-50`}>
             {navItems.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
-                className="block md:inline-block mt-4 md:mt-0 md:ml-6 hover:text-green-300 transition-colors duration-200"
+                className="block py-2 px-4 md:inline-block md:mt-0 md:ml-6 hover:text-green-300 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span className="flex items-center">
