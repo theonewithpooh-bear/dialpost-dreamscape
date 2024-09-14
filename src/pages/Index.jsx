@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { MapPinIcon, HomeIcon, BeerIcon, TreesIcon, BuildingIcon, BookOpenIcon, LandmarkIcon, ArchiveIcon } from 'lucide-react';
 import Header from '@/components/Header';
@@ -35,9 +36,9 @@ const Index = () => {
               <p className="text-green-800 leading-relaxed">
                 Embark on a journey through time as you explore the fascinating past of Dial Post. From its humble beginnings in the early 18th century to its present-day charm, every corner of our village tells a story.
               </p>
-              <div className="mt-4 text-green-600 font-semibold">
+              <Link to="/history" className="mt-4 text-green-600 font-semibold hover:text-green-800 transition-colors">
                 Discover our heritage &rarr;
-              </div>
+              </Link>
             </CardContent>
           </Card>
 
@@ -67,9 +68,9 @@ const Index = () => {
                   <span>Garden Centre</span>
                 </li>
               </ul>
-              <div className="mt-4 text-green-600 font-semibold">
+              <Link to="/landmarks" className="mt-4 text-green-600 font-semibold hover:text-green-800 transition-colors">
                 Explore our landmarks &rarr;
-              </div>
+              </Link>
             </CardContent>
           </Card>
 
@@ -99,9 +100,9 @@ const Index = () => {
                   <span>Dial Post House</span>
                 </li>
               </ul>
-              <div className="mt-4 text-green-600 font-semibold">
+              <Link to="/listed-buildings" className="mt-4 text-green-600 font-semibold hover:text-green-800 transition-colors">
                 Learn about our heritage buildings &rarr;
-              </div>
+              </Link>
             </CardContent>
           </Card>
         </section>
