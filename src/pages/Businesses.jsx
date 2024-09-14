@@ -80,7 +80,7 @@ const Businesses = () => {
                   <MailIcon className="h-4 w-4 mr-1" />
                   Email
                 </a>
-                <a href="https://www.tatesofsusse.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="https://www.tatesofsussex.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
                   <GlobeIcon className="h-4 w-4 mr-1" />
                   Website
                 </a>
@@ -91,21 +91,21 @@ const Businesses = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <BuildingIcon className="h-6 w-6 mr-2 text-red-600" />
-                Thakum Furniture
+                Thakeham Furniture
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">A local furniture store specializing in high-quality, handcrafted pieces. Thakum Furniture offers a range of styles from traditional to contemporary, perfect for enhancing your home.</p>
+              <p className="mb-4">A family-run antique furniture business established in 1987. Thakeham Furniture specializes in high-quality Georgian furniture with an emphasis on color and patina. Their large showroom in Dial Post, West Sussex, is housed in a characterful old engineering works with ample natural light.</p>
               <div className="flex space-x-4">
-                <a href="tel:+441403710789" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="tel:+441403713649" className="flex items-center text-green-600 hover:text-green-800">
                   <PhoneIcon className="h-4 w-4 mr-1" />
                   Call
                 </a>
-                <a href="mailto:info@thakumfurniture.co.uk" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="mailto:info@thakehamfurniture.co.uk" className="flex items-center text-green-600 hover:text-green-800">
                   <MailIcon className="h-4 w-4 mr-1" />
                   Email
                 </a>
-                <a href="https://www.thakumfurniture.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="https://www.thakehamfurniture.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
                   <GlobeIcon className="h-4 w-4 mr-1" />
                   Website
                 </a>
