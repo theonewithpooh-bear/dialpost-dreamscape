@@ -5,7 +5,7 @@ import Businesses from "./pages/Businesses.jsx";
 import ListedBuildings from "./pages/ListedBuildings.jsx";
 import Events from "./pages/Events.jsx";
 import Wiki from "./pages/Wiki.jsx";
-import AlphaExplanation from "./components/AlphaExplanation.jsx";
+import AlphaExplanation from "./pages/AlphaExplanation.jsx";
 
 export const navItems = [
   {
