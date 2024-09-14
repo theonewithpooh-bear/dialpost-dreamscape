@@ -12,9 +12,9 @@ const Index = () => {
 
       <main className="container mx-auto py-8 px-4">
         <section className="mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-4 text-green-800">Welcome to Dial Post</h2>
+          <h2 className="text-4xl font-bold mb-4 text-green-800 chewy-regular">Welcome to Dial Post</h2>
           <p className="text-xl mb-4 text-green-700 max-w-2xl mx-auto">
-            Explore the rich history and natural beauty of our West Sussex village.
+            A charming West Sussex village with a rich history and natural beauty.
           </p>
           <div className="flex items-center justify-center text-green-600">
             <MapPinIcon className="h-5 w-5 mr-2" />
@@ -32,7 +32,7 @@ const Index = () => {
             </CardHeader>
             <CardContent className="p-6">
               <p className="text-green-800 leading-relaxed">
-                Discover Dial Post's journey from its early 18th century origins to the present day.
+                Explore Dial Post's journey from its early 18th century origins to the present day.
               </p>
             </CardContent>
           </Card>
@@ -99,37 +99,37 @@ const Index = () => {
         <PointsOfInterest />
 
         <section className="mb-16 text-center">
-          <h2 className="text-4xl font-bold mb-4 text-green-800">Knepp Estate</h2>
+          <h2 className="text-4xl font-bold mb-4 text-green-800 chewy-regular">Knepp Estate</h2>
           <p className="text-xl mb-6 text-green-700 max-w-3xl mx-auto">
-            Experience the Knepp Estate's pioneering rewilding project, spanning 3,500 acres of Sussex countryside.
+            Discover the Knepp Estate's rewilding project, spanning 3,500 acres of Sussex countryside.
           </p>
           <a href="https://knepp.co.uk" target="_blank" rel="noopener noreferrer" className="inline-block">
             <button className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300">
-              Explore Knepp Estate
+              Visit Knepp Estate
             </button>
           </a>
         </section>
 
         <section className="text-center">
-          <h2 className="text-4xl font-bold mb-4 text-green-800">Plan Your Visit</h2>
+          <h2 className="text-4xl font-bold mb-4 text-green-800 chewy-regular">Plan Your Visit</h2>
           <p className="text-xl mb-6 text-green-700 max-w-3xl mx-auto">
-            Experience the tranquil beauty of Dial Post, from our historic pub to the Knepp Estate.
+            Experience Dial Post's attractions, from our historic pub to the Knepp Estate.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <HomeIcon className="h-12 w-12 mx-auto mb-4 text-green-600" />
               <h3 className="text-xl font-semibold mb-2 text-green-700">Accommodations</h3>
-              <p className="text-green-600">Find comfortable lodgings in and around Dial Post.</p>
+              <p className="text-green-600">Find lodgings in and around Dial Post.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <BeerIcon className="h-12 w-12 mx-auto mb-4 text-green-600" />
               <h3 className="text-xl font-semibold mb-2 text-green-700">Local Cuisine</h3>
-              <p className="text-green-600">Enjoy meals at The Crown Inn and nearby restaurants.</p>
+              <p className="text-green-600">Dine at The Crown Inn and nearby restaurants.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <TreesIcon className="h-12 w-12 mx-auto mb-4 text-green-600" />
               <h3 className="text-xl font-semibold mb-2 text-green-700">Nature Walks</h3>
-              <p className="text-green-600">Explore scenic trails and the Knepp Estate.</p>
+              <p className="text-green-600">Explore local trails and the Knepp Estate.</p>
             </div>
           </div>
         </section>
