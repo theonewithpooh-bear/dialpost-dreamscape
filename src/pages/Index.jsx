@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { MapPinIcon, HomeIcon, BeerIcon, TreesIcon, BuildingIcon, BookOpenIcon, ArchiveIcon } from 'lucide-react';
+import { MapPinIcon, HomeIcon, BeerIcon, TreesIcon, BuildingIcon } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PointsOfInterest from '@/components/PointsOfInterest';
@@ -28,7 +27,7 @@ const Index = () => {
           <Card className="bg-gradient-to-br from-green-100 to-green-200 hover:from-green-200 hover:to-green-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl rounded-lg overflow-hidden">
             <CardHeader className="bg-green-700 text-white p-4">
               <CardTitle className="flex items-center text-2xl">
-                <BookOpenIcon className="h-6 w-6 mr-2" />
+                <HomeIcon className="h-6 w-6 mr-2" />
                 Our Rich History
               </CardTitle>
             </CardHeader>
@@ -36,9 +35,6 @@ const Index = () => {
               <p className="text-green-800 leading-relaxed">
                 Embark on a journey through time as you explore the fascinating past of Dial Post. From its humble beginnings in the early 18th century to its present-day charm, every corner of our village tells a story.
               </p>
-              <Link to="/history" className="mt-4 text-green-600 font-semibold hover:text-green-800 transition-colors">
-                Discover our heritage &rarr;
-              </Link>
             </CardContent>
           </Card>
 
@@ -68,16 +64,13 @@ const Index = () => {
                   <span>Thakum Furniture</span>
                 </li>
               </ul>
-              <Link to="/businesses" className="mt-4 text-green-600 font-semibold hover:text-green-800 transition-colors">
-                Explore our businesses &rarr;
-              </Link>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-green-100 to-green-200 hover:from-green-200 hover:to-green-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl rounded-lg overflow-hidden">
             <CardHeader className="bg-green-700 text-white p-4">
               <CardTitle className="flex items-center text-2xl">
-                <ArchiveIcon className="h-6 w-6 mr-2" />
+                <HomeIcon className="h-6 w-6 mr-2" />
                 Listed Buildings
               </CardTitle>
             </CardHeader>
@@ -100,9 +93,6 @@ const Index = () => {
                   <span>Dial Post House</span>
                 </li>
               </ul>
-              <Link to="/listed-buildings" className="mt-4 text-green-600 font-semibold hover:text-green-800 transition-colors">
-                Learn about our heritage buildings &rarr;
-              </Link>
             </CardContent>
           </Card>
         </section>
