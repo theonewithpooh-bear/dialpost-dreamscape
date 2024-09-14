@@ -23,8 +23,8 @@ const App = () => {
             <MobileNavigation isOpen={isNavigationOpen} onClose={() => setIsNavigationOpen(false)} />
             <main className="flex-grow">
               <Routes>
-                {navItems.map(({ to, page }) => (
-                  <Route key={to} path={to} element={page} />
+                {navItems.map(({ to, page: PageComponent }) => (
+                  <Route key={to} path={to} element={<PageComponent />} />
                 ))}
               </Routes>
             </main>
