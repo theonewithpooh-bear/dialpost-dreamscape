@@ -66,21 +66,24 @@ const Businesses = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <HomeIcon className="h-6 w-6 mr-2 text-blue-600" />
-                Tates Garden Centre
+                Tates Old Barn Garden Centre
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">A family-run garden centre offering a wide variety of plants, gardening supplies, and seasonal items. The centre also features a charming café serving homemade treats.</p>
+              <p className="mb-4">Part of the Tates Group since 2018, Old Barn Garden Centre has been transformed into a destination garden centre with a 200-seater restaurant and coffee shop. It offers a wide range of plants, garden supplies, and home decor items.</p>
+              <ul className="mb-4 list-disc list-inside">
+                <li>Extensive plant nursery with knowledgeable staff</li>
+                <li>Garden and Lifestyle shop for home and garden inspiration</li>
+                <li>Wide range of garden buildings, hot tubs, and conservatories</li>
+                <li>200-seater restaurant and coffee shop</li>
+                <li>The Garden Room available for events and functions</li>
+              </ul>
               <div className="flex space-x-4">
-                <a href="tel:+441403710358" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="tel:+441403710000" className="flex items-center text-green-600 hover:text-green-800">
                   <PhoneIcon className="h-4 w-4 mr-1" />
                   Call
                 </a>
-                <a href="mailto:info@tatesgardencentre.co.uk" className="flex items-center text-green-600 hover:text-green-800">
-                  <MailIcon className="h-4 w-4 mr-1" />
-                  Email
-                </a>
-                <a href="https://www.tatesofsussex.co.uk" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
+                <a href="https://www.tatesofsussex.co.uk/garden-centres/old-barn/" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800">
                   <GlobeIcon className="h-4 w-4 mr-1" />
                   Website
                 </a>
@@ -95,7 +98,13 @@ const Businesses = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">A family-run antique furniture business established in 1987. Thakeham Furniture specializes in high-quality Georgian furniture with an emphasis on color and patina. Their large showroom in Dial Post, West Sussex, is housed in a characterful old engineering works with ample natural light.</p>
+              <p className="mb-4">A family-run antique furniture business established in 1987 by Tim and Belinda Chavasse. Thakeham Furniture specializes in high-quality Georgian furniture with an emphasis on color and patina. Their large showroom in Dial Post, West Sussex, is housed in a characterful old engineering works with ample natural light.</p>
+              <ul className="mb-4 list-disc list-inside">
+                <li>Specializes in Georgian furniture</li>
+                <li>Emphasis on color and patina</li>
+                <li>Skilled restoration services</li>
+                <li>Family-run business since 1987</li>
+              </ul>
               <div className="flex space-x-4">
                 <a href="tel:+441403713649" className="flex items-center text-green-600 hover:text-green-800">
                   <PhoneIcon className="h-4 w-4 mr-1" />
