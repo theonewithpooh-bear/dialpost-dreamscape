@@ -1,9 +1,10 @@
-import { HomeIcon, BookOpenIcon, BuildingIcon, ArchiveIcon, CalendarIcon } from "lucide-react";
+import { HomeIcon, BookOpenIcon, BuildingIcon, ArchiveIcon, CalendarIcon, BookIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import History from "./pages/History.jsx";
 import Businesses from "./pages/Businesses.jsx";
 import ListedBuildings from "./pages/ListedBuildings.jsx";
 import Events from "./pages/Events.jsx";
+import Wiki from "./pages/Wiki.jsx";
 
 export const navItems = [
   {
@@ -35,5 +36,11 @@ export const navItems = [
     to: "/events",
     icon: <CalendarIcon className="h-4 w-4" />,
     page: <Events />,
+  },
+  {
+    title: "Wiki",
+    to: "/wiki",
+    icon: <BookIcon className="h-4 w-4" />,
+    page: <Wiki />,
   },
 ];
