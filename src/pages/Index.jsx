@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPinIcon, HomeIcon, BeerIcon, TreesIcon, BuildingIcon } from 'lucide-react';
+import { MapPinIcon, HomeIcon, BeerIcon, TreePine, BuildingIcon } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '../styles/custom.css';
@@ -49,7 +49,7 @@ const Index = () => {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
             <CardContent className="p-6">
               <h3 className="text-2xl font-bold mb-4 text-green-800 flex items-center">
-                <TreesIcon className="h-6 w-6 mr-2 text-green-600" />
+                <TreePine className="h-6 w-6 mr-2 text-green-600" />
                 Knepp Estate
               </h3>
               <p className="text-green-700 leading-relaxed mb-4">
@@ -76,7 +76,7 @@ const Index = () => {
             {[
               { icon: HomeIcon, title: "Stay", description: "Cozy rooms at The Crown Inn" },
               { icon: BeerIcon, title: "Dine", description: "Local cuisine and pub fare" },
-              { icon: TreesIcon, title: "Explore", description: "Nature walks and Knepp tours" }
+              { icon: TreePine, title: "Explore", description: "Nature walks and Knepp tours" }
             ].map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                 <item.icon className="h-12 w-12 mx-auto mb-4 text-green-600" />

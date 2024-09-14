@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { BookIcon, MapPinIcon, TreeIcon, HomeIcon } from 'lucide-react';
+import { BookIcon, MapPinIcon, TreePine, HomeIcon } from 'lucide-react';
 
 const Wiki = () => {
   const wikiEntries = [
     { title: "Geography", icon: MapPinIcon, content: "Dial Post is located in West Sussex, England, approximately 6 miles south of Horsham." },
     { title: "History", icon: BookIcon, content: "The village has roots dating back to the early 18th century, evolving from an agricultural settlement." },
     { title: "Landmarks", icon: HomeIcon, content: "Notable landmarks include The Crown Inn, the new Village Hall, and several listed buildings." },
-    { title: "Nature", icon: TreeIcon, content: "The nearby Knepp Estate offers a glimpse into rewilding and conservation efforts in the area." },
+    { title: "Nature", icon: TreePine, content: "The nearby Knepp Estate offers a glimpse into rewilding and conservation efforts in the area." },
   ];
 
   return (
