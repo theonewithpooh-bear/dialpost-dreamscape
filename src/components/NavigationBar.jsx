@@ -7,12 +7,12 @@ const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-green-800 text-white py-4">
+    <nav className="bg-green-800 text-white py-4 relative">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-xl font-bold">Dial Post</Link>
           <button
-            className="md:hidden"
+            className="md:hidden z-20"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -26,7 +26,7 @@ const NavigationBar = () => {
               </div>
             )}
           </button>
-          <div className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} absolute md:relative top-full left-0 right-0 bg-green-800 md:bg-transparent z-50`}>
+          <div className={`md:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col md:flex-row absolute md:relative top-full left-0 right-0 bg-green-800 md:bg-transparent z-10`}>
             {navItems.map((item) => (
               <Link
                 key={item.to}

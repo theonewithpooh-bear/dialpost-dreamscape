@@ -15,17 +15,6 @@ const ListedBuildings = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center">
-                <HomeIcon className="h-6 w-6 mr-2 text-indigo-600" />
-                New Lodge
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>A Grade II listed building dating back to the 18th century, known for its Georgian architecture.</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center">
                 <HomeIcon className="h-6 w-6 mr-2 text-pink-600" />
                 Hazel Cottage
               </CardTitle>
