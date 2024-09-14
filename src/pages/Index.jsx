@@ -40,7 +40,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-center">
                   <BuildingIcon className="h-5 w-5 mr-2 text-red-600 flex-shrink-0" />
-                  <span>Listed buildings: Including the historic New Lodge</span>
+                  <span>Historic buildings with Grade II listed status</span>
                 </li>
               </ul>
             </CardContent>
