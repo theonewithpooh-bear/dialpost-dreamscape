@@ -33,7 +33,7 @@ const WelcomePopup = () => {
               <li>New 'History' and 'Listed Buildings' pages</li>
               <li>Enhanced 'Businesses' page with more local information</li>
               <li>Responsive design for better mobile experience</li>
-              <li>Performance optimizations for faster loading</li>
+              <li>Performance optimisations for faster loading</li>
             </ul>
             <p>Thank you for being part of our alpha testing. Your feedback is valuable!</p>
           </DialogDescription>

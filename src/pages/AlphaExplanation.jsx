@@ -14,7 +14,7 @@ const AlphaExplanation = () => {
           <li>Some features may not be fully functional or might change.</li>
           <li>There could be bugs or unexpected behavior.</li>
           <li>The design and content are subject to change.</li>
-          <li>We're actively seeking feedback to improve the site.</li>
+          <li>We are actively seeking feedback to improve the site.</li>
         </ul>
         <p className="text-green-700 mb-4">
           While in Alpha, we encourage users to explore the site and provide feedback, but please be aware that some aspects may not be finalized or fully operational.

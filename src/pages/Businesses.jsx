@@ -39,7 +39,7 @@ const Businesses = () => {
             { href: "https://www.thecrowninndialpost.com", icon: <GlobeIcon className="h-4 w-4 mr-1" />, label: "Website" }
           ]}
         >
-          <p className="mb-4">An award-winning free house owned and run by Penny and James Middleton-Burn. Known for excellent homemade food, local Sussex breweries, and a welcoming atmosphere.</p>
+          <p className="mb-4">An award-winning free house owned and run by Penny and James Middleton-Burn. Known for excellent home-made food, local Sussex breweries, and a welcoming atmosphere.</p>
           <ul className="list-disc list-inside mb-4">
             <li>Daily menu of pub classics and seasonal specials</li>
             <li>Four beautifully appointed rooms and two self-catering cottages</li>
