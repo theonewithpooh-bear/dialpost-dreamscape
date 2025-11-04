@@ -170,7 +170,7 @@ const Wiki = () => {
                     </div>
                     <div className="bg-accent/20 border-l-4 border-accent p-4 rounded-lg mt-4">
                       <p>
-                        There is no church in Dial Post itself. The ecclesiastical parish centres on the Grade I listed St George's Church in West Grinstead.
+                        There is no church in Dial Post itself. The village is likely transitioning to the Shipley parish, which has its own historic church. Previously, the ecclesiastical parish centred on the Grade I listed St George's Church in West Grinstead.
                       </p>
                     </div>
                   </div>
