@@ -4,18 +4,20 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { BeerIcon, TreesIcon, HomeIcon, BuildingIcon, PhoneIcon, MailIcon, GlobeIcon } from 'lucide-react';
 
 const BusinessCard = ({ title, icon, children, contacts }) => (
-  <Card>
+  <Card className="hover:shadow-xl transition-shadow border-border">
     <CardHeader>
-      <CardTitle className="flex items-center">
+      <CardTitle className="flex items-center text-card-foreground">
         {icon}
         {title}
       </CardTitle>
     </CardHeader>
     <CardContent>
-      {children}
-      <div className="flex space-x-4 mt-4">
+      <div className="text-muted-foreground">
+        {children}
+      </div>
+      <div className="flex flex-wrap gap-4 mt-6">
         {contacts.map((contact, index) => (
-          <a key={index} href={contact.href} className="flex items-center text-green-600 hover:text-green-800">
+          <a key={index} href={contact.href} className="flex items-center text-primary hover:opacity-80 transition-opacity font-medium">
             {contact.icon}
             {contact.label}
           </a>
@@ -27,9 +29,10 @@ const BusinessCard = ({ title, icon, children, contacts }) => (
 
 const Businesses = () => {
   return (
-    <div className="container mx-auto py-8 px-4">
-      <h1 className="text-4xl font-bold mb-6 text-green-800">Local Businesses</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="min-h-screen bg-gradient-to-b from-secondary to-background">
+      <div className="container mx-auto py-12 px-4">
+        <h1 className="text-5xl font-bold mb-8 text-foreground">Local Businesses</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <BusinessCard
           title="The Crown Inn"
           icon={<BeerIcon className="h-6 w-6 mr-2 text-amber-600" />}
@@ -95,10 +98,11 @@ const Businesses = () => {
             <li>Family-run business since 1987</li>
           </ul>
         </BusinessCard>
+        </div>
+        <Link to="/" className="mt-8 inline-flex items-center text-primary hover:opacity-80 font-semibold transition-opacity">
+          &larr; Back to Home
+        </Link>
       </div>
-      <Link to="/" className="mt-6 inline-block text-green-600 hover:text-green-800 font-semibold">
-        &larr; Back to Home
-      </Link>
     </div>
   );
 };
