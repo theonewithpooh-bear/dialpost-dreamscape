@@ -3,21 +3,34 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-green-900 text-white py-8">
-      <div className="container mx-auto text-center">
-        <p className="mb-2">&copy; 2024 Dial Post Village. All rights reserved.</p>
-        <p className="text-sm mb-4">A hidden gem in the heart of West Sussex</p>
-        <div className="mb-4">
-          <p className="mb-2">
-            Contact Monty, site admin, for changes or information: 
-            <a href="mailto:info@dialpostvillage.co.uk" className="underline hover:text-green-300 ml-1">info@dialpostvillage.co.uk</a>
-          </p>
-          <p>Feedback is very much appreciated!</p>
+    <footer className="bg-primary text-primary-foreground py-12 mt-16">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h3 className="font-bold text-lg mb-3">Dial Post Village</h3>
+            <p className="text-sm opacity-90">A hidden gem in the heart of West Sussex</p>
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-3">Contact</h3>
+            <p className="text-sm opacity-90 mb-2">
+              Site admin: Monty
+            </p>
+            <a 
+              href="mailto:info@dialpostvillage.co.uk" 
+              className="text-sm opacity-90 hover:opacity-100 transition-opacity underline"
+            >
+              info@dialpostvillage.co.uk
+            </a>
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-3">Feedback</h3>
+            <p className="text-sm opacity-90">
+              We'd love to hear from you! Your feedback helps us improve the site.
+            </p>
+          </div>
         </div>
-        <div className="flex justify-center items-center">
-          <span className="bg-yellow-500 text-black px-2 py-1 rounded-md text-sm font-bold mr-2">α</span>
-          <p className="text-sm mr-2">This website is currently in Alpha stage.</p>
-          <Link to="/alpha-explanation" className="text-sm underline hover:text-green-300">What does Alpha stage mean?</Link>
+        <div className="border-t border-primary-foreground/20 pt-6 text-center">
+          <p className="text-sm opacity-80">&copy; 2024 Dial Post Village. All rights reserved.</p>
         </div>
       </div>
     </footer>

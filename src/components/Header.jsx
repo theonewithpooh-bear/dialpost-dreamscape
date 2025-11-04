@@ -8,30 +8,32 @@ const Header = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <header className="bg-green-700 text-white py-4 px-4 sticky top-0 z-50">
+    <header className="bg-primary text-primary-foreground py-5 px-4 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-4xl font-bold special-elite-regular">Dial Post</Link>
+          <Link to="/" className="text-3xl font-bold special-elite-regular hover:opacity-90 transition-opacity">
+            Dial Post
+          </Link>
           <nav className="hidden md:block">
-            <ul className="flex space-x-4">
+            <ul className="flex space-x-6">
               {navItems.map((item) => (
                 <li key={item.to}>
                   <Link
                     to={item.to}
-                    className="hover:text-green-300 transition-colors duration-200 flex items-center"
+                    className="hover:text-accent transition-colors duration-200 flex items-center font-medium"
                   >
                     {item.icon}
-                    <span className="ml-1">{item.title}</span>
+                    <span className="ml-2">{item.title}</span>
                   </Link>
                 </li>
               ))}
             </ul>
           </nav>
           <button
-            className="md:hidden bg-green-600 hover:bg-green-500 text-white py-2 px-4 rounded"
+            className="md:hidden bg-primary-foreground text-primary py-2 px-4 rounded-lg hover:opacity-90 transition-opacity font-medium"
             onClick={() => setIsMobileNavOpen(true)}
           >
-            Display Navigation
+            Menu
           </button>
         </div>
       </div>
