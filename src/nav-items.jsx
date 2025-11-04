@@ -5,7 +5,6 @@ import Businesses from "./pages/Businesses";
 import ListedBuildings from "./pages/ListedBuildings";
 import Events from "./pages/Events";
 import Wiki from "./pages/Wiki";
-import AlphaExplanation from "./pages/AlphaExplanation";
 
 export const navItems = [
   {
@@ -43,11 +42,5 @@ export const navItems = [
     to: "/wiki",
     icon: <BookIcon className="h-4 w-4" />,
     component: Wiki,
-  },
-  {
-    title: "Alpha Explanation",
-    to: "/alpha-explanation",
-    icon: <BookIcon className="h-4 w-4" />,
-    component: AlphaExplanation,
   },
 ];
